@@ -1,0 +1,51 @@
+{
+  "name": "tetris-hub",
+  "version": "1.0.0",
+  "description": "Веб-платформа для сообщества игроков в Тетрис",
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint . --ext .ts,.tsx",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "db:generate": "drizzle-kit generate",
+    "db:push": "drizzle-kit push",
+    "db:studio": "drizzle-kit studio",
+    "db:migrate": "node --loader ts-node/esm src/server/db/migrate.ts"
+  },
+  "dependencies": {
+    "@tanstack/react-query": "^5.62.0",
+    "@trpc/client": "11.16.0",
+    "@trpc/react-query": "11.16.0",
+    "@trpc/server": "11.16.0",
+    "better-auth": "1.6.7",
+    "drizzle-orm": "0.45.2",
+    "better-sqlite3": "11.8.1",
+    "next": "16.2.4",
+    "react": "19.2.5",
+    "react-dom": "19.2.5",
+    "superjson": "2.2.2",
+    "zod": "3.24.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "4.0.0",
+    "@types/better-sqlite3": "7.6.12",
+    "@types/node": "22.10.5",
+    "@types/react": "19.0.3",
+    "@types/react-dom": "19.0.2",
+    "@vitejs/plugin-react": "4.3.4",
+    "autoprefixer": "10.4.20",
+    "drizzle-kit": "0.45.2",
+    "eslint": "9.17.0",
+    "eslint-config-next": "16.2.4",
+    "happy-dom": "15.11.7",
+    "postcss": "8.4.49",
+    "tailwindcss": "3.4.17",
+    "ts-node": "10.9.2",
+    "typescript": "6.0.0",
+    "vitest": "2.1.8"
+  }
+}
